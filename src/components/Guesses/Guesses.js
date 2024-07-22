@@ -1,8 +1,8 @@
 import React from "react";
 import Guess from "../Guess";
-function Guesses({ guesses }) {
+function Guesses({ guesses, answer }) {
   const renderGuess = (guess) => {
-    return <Guess guess={guess} />;
+    return <Guess guess={guess} answer={answer} />;
   };
   return (
     <div className="guess-results">
