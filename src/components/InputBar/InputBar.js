@@ -1,6 +1,6 @@
 import React from "react";
 
-function InputBar({ input, onChange, handleSubmit }) {
+function InputBar({ input, onChange, handleSubmit, isDisabled }) {
   return (
     <form className="guess-input-wrapper" onSubmit={handleSubmit}>
       <label htmlFor="guess-input">Enter guess:</label>
@@ -10,6 +10,7 @@ function InputBar({ input, onChange, handleSubmit }) {
         type="text"
         value={input}
         onChange={onChange}
+        disabled={isDisabled}
       />
     </form>
   );
